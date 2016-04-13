@@ -16,3 +16,8 @@ OSSpinlock: 0.431712 sec
 因为mutex及semaphore都偏向底层C实现，所以性能都很好。
 
 但是因为OSSpinlock 被发现有bug，所以 建议 使用 semaphore 和 mutex。
+
+参考资料：
+http://perpendiculo.us/2009/09/synchronized-nslock-pthread-osspinlock-showdown-done-right
+http://www.dreamingwish.com/article/the-ios-multithreaded-programming-guide-4-thread-synchronization.html
+http://blog.ibireme.com/2016/01/16/spinlock_is_unsafe_in_ios
